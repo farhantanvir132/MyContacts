@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactFormActivity"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/contactform"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#827AEF"
+        android:gravity="center"
+
+        android:text="Contact Form"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactform" />
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="#E6DADA"
+        android:text=""
+        android:hint="Enter Name"
+        android:textColorHint="#A59E9E"
+        android:paddingLeft="7dp"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="95dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/baseline_person_outline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toEndOf="@id/nametext"
+        app:layout_constraintTop_toBottomOf="@id/contactform" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nametext" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="#E6DADA"
+        android:text=""
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email"
+        android:textColorHint="#A59E9E"
+        android:paddingLeft="7dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+    <TextView
+        android:id="@+id/phnhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone(Home)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailtext" />
+
+    <EditText
+        android:id="@+id/hometext"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="#E6DADA"
+        android:text=""
+        android:hint="Enter Phone Number"
+        android:inputType="numberSigned"
+        android:paddingLeft="7dp"
+        android:textColorHint="#A59E9E"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phnhome" />
+    <TextView
+        android:id="@+id/phnoffice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone(Ofiice)"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hometext" />
+
+    <EditText
+        android:id="@+id/officetext"
+        android:hint="Enter Phone Number"
+        android:paddingLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:inputType="numberSigned"
+        android:textColorHint="#A59E9E"
+        android:textColor="@color/black"
+        android:background="#E6DADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phnoffice" />
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Save"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toEndOf="@id/btncancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
